@@ -1,0 +1,30 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Model & generated artifacts
+outputs/*.png
+outputs/*.json
+
+# Dataset (usually too large for git)
+data/train/*
+data/test/*
+!data/train/.gitkeep
+!data/test/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
