@@ -3,6 +3,14 @@
 A CNN-based image classifier that identifies **Apple, Banana, Orange, Mango,
 and Grapes** from uploaded images, with a Streamlit web interface for
 interactive predictions.
+## 🚀 Live Demo
+
+<p style="font-size: 20px;">
+<a href="https://image-classifier-for-fruits-njwz5asprufgz3uwqvpfgr.streamlit.app/">
+Click here to view the live application
+</a>
+</p>
+---
 
 ## Tech Stack
 - Python 3.10+
