@@ -6,7 +6,6 @@ train.py, evaluate.py, predict.py, and app.py
 import os
 import numpy as np
 from PIL import Image
-import cv2
 
 # ----------------------------
 # Constants
@@ -39,10 +38,10 @@ def preprocess_image(image, img_size=IMG_SIZE):
     """
     if isinstance(image, str):
         # Load from file path with OpenCV, convert BGR -> RGB
-        img = cv2.imread(image)
-        if img is None:
-            raise ValueError(f"Could not read image at path: {image}")
-        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+       from PIL import Image
+       import numpy as np
+
+       img = Image.open(image).convert("RGB")   
     elif isinstance(image, Image.Image):
         img = np.array(image.convert("RGB"))
     elif isinstance(image, np.ndarray):
