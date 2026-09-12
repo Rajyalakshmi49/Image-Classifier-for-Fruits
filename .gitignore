@@ -12,12 +12,6 @@ env/
 outputs/*.png
 outputs/*.json
 
-# Dataset (usually too large for git)
-data/train/*
-data/test/*
-!data/train/.gitkeep
-!data/test/.gitkeep
-
 # IDE
 .vscode/
 .idea/
